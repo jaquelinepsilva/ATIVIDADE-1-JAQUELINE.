@@ -15,12 +15,12 @@ using namespace std;
 int main() {
 int i = 0;
 char texto[1000];
+char escolha;
 
-
-cout <<"Digite um texto de no máximo 1000 caracteres e que tenha somente letras maíúsculas e números:";
+cout <<"Digite um texto de no máximo 1000 caracteres e que tenha somente letras maíúsculas e números:(não use capslock, somente shift)"<< endl;
 cin.getline(texto,1000);
 int tamanho = strlen(texto);
-
+int novotamanho=0;
 
 
 char novotexto[1000];
@@ -34,16 +34,19 @@ for(i=0;i<tamanho;i++){
   if(texto[i]=='1'){
     novotexto[i]='Z';
     novotexto[i+1]='B';
+
     i++;
   }
   if(texto[i]=='2'){
      novotexto[i]='Z';
     novotexto[i+1]='C';
+
     i++;   
   }
   if(texto[i]=='3'){
     novotexto[i]='Z';
     novotexto[i+1]='D';
+ 
     i++;    
   }
   if(texto[i]=='4'){
@@ -159,26 +162,33 @@ for(i=0;i<tamanho;i++){
   } 
   }
   if(texto[i]=='Z'){
-    cout<<'Z';
-    cout<<'Z';
     novotexto[i]='Z';
     novotexto[i+1]='Z';
     i++;
   }
 }
-int novotamanho= strlen(novotexto);
+
+novotamanho = strlen(novotexto);
+
+
 int vezes=1;
 for(i=0;i<novotamanho;i++){
 if(novotexto[i]==novotexto[i+1]){
   vezes++;
   if(novotexto[i]!=novotexto[i+2]){
-    cout <<vezes;
+    cout<<vezes;
     cout<<novotexto[i];
+    i++;
+    vezes=1;
   }
-}if((novotexto[i]!=novotexto[i+1])&&(novotexto[i]!=novotexto[i-1])){
+}
+if(i>=0){
+if((novotexto[i]!=novotexto[i-1])&&(novotexto[i]!=novotexto[i+1])){
   cout<<novotexto[i];
 }
 }
 
 
+
+}
 }
