@@ -18,10 +18,111 @@ int main() {
   char texto[1000];
 
   cout << " Digite um textode no máximo 1000 caracteres e que tenha somente letras maíusculas e números: " ;
+
   cin.getline(texto,1000);
 
   int tamanho = strlen( texto);
 
+  char novotexto[1000];
+  for(i = 0; i < tamanho; i ++){
+
+  if(texto[i]=='0')
+    {
+      cout << 'Z';
+      cout<< 'A';
+      novotexto[i]='Z';
+      novotexto[i+1]='A';
+      i++;
+    }
+
+  if(texto[i]=='1')
+    {
+      cout << 'Z';
+      cout << 'B';
+      novotexto[i]='Z';
+      novotexto[i+1]='B';
+      i++;
+
+    }
+
+  if(texto[i]=='2')
+   {
+    cout<<'Z';
+    cout<<'C';
+     novotexto[i]='Z';
+    novotexto[i+1]='C';
+    i++;   
+   }
+  if(texto[i]=='3')
+  {
+    cout<<'Z';
+    cout<<'D';
+    novotexto[i]='Z';
+    novotexto[i+1]='D';
+    i++;    
+  }
+  if(texto[i]=='4'){
+    cout<<'Z';
+    cout<<'E';
+    novotexto[i]='Z';
+    novotexto[i+1]='E';
+    i++;    
+  }
+  if(texto[i]=='5'){
+    cout<<'Z';
+    cout<<'F';
+    novotexto[i]='Z';
+    novotexto[i+1]='F';
+    i++;
+  } 
+  if(texto[i]=='6'){
+    cout<<'Z';
+    cout<<'G';
+    novotexto[i]='Z';
+    novotexto[i+1]='G';
+    i++;
+  }
   
+  if(texto[i]=='7')
+  {
+    cout<<'Z';
+    cout<<'H';
+    novotexto[i]='Z';
+    novotexto[i+1]='H';
+    i++;
+  }
+  
+  if(texto[i]=='8')
+  {
+    cout<<'Z';
+    cout<<'I';
+    novotexto[i]='Z';
+    novotexto[i+1]='I';
+    i++;
+  }
+  
+  if(texto[i]=='9')
+  {
+    cout<<'Z';
+    cout<<'J';
+    novotexto[i]='Z';
+    novotexto[i+1]='J';
+    i++;
+  }
+    
+  }
+  if(texto[i]=='Z'){
+    cout<<'Z';
+    cout<<'Z';
+    novotexto[i]='Z';
+    novotexto[i+1]='Z';
+    i++;
+  }
+
+
+
+
 
 }
+
+
