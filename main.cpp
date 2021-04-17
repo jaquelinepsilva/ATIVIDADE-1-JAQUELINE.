@@ -10,106 +10,153 @@
 #include <cstring>
 #include <string.h>
 
-
-
 using namespace std;
+
 int main() {
-  int i = 0;
-  char texto[1000];
+int i = 0;
+char texto[1000];
 
-  cout << " Digite um textode no máximo 1000 caracteres e que tenha somente letras maíusculas e números: " ;
 
-  cin.getline(texto,1000);
+cout <<"Digite um texto de no máximo 1000 caracteres e que tenha somente letras maíúsculas e números:";
+cin.getline(texto,1000);
+int tamanho = strlen(texto);
 
-  int tamanho = strlen( texto);
 
-  char novotexto[1000];
-  for(i = 0; i < tamanho; i ++){
 
-  if(texto[i]=='0')
-    {
-      cout << 'Z';
-      cout<< 'A';
-      novotexto[i]='Z';
-      novotexto[i+1]='A';
-      i++;
-    }
-
-  if(texto[i]=='1')
-    {
-      cout << 'Z';
-      cout << 'B';
-      novotexto[i]='Z';
-      novotexto[i+1]='B';
-      i++;
-
-    }
-
-  if(texto[i]=='2')
-   {
-    cout<<'Z';
-    cout<<'C';
+char novotexto[1000];
+for(i=0;i<tamanho;i++){
+  if(texto[i]!='Z'){
+      if(texto[i]=='0'){
+    novotexto[i]='Z';
+    novotexto[i+1]='A';
+    i++; 
+  }
+  if(texto[i]=='1'){
+    novotexto[i]='Z';
+    novotexto[i+1]='B';
+    i++;
+  }
+  if(texto[i]=='2'){
      novotexto[i]='Z';
     novotexto[i+1]='C';
     i++;   
-   }
-  if(texto[i]=='3')
-  {
-    cout<<'Z';
-    cout<<'D';
+  }
+  if(texto[i]=='3'){
     novotexto[i]='Z';
     novotexto[i+1]='D';
     i++;    
   }
   if(texto[i]=='4'){
-    cout<<'Z';
-    cout<<'E';
     novotexto[i]='Z';
     novotexto[i+1]='E';
     i++;    
   }
   if(texto[i]=='5'){
-    cout<<'Z';
-    cout<<'F';
     novotexto[i]='Z';
     novotexto[i+1]='F';
     i++;
   } 
   if(texto[i]=='6'){
-    cout<<'Z';
-    cout<<'G';
     novotexto[i]='Z';
     novotexto[i+1]='G';
     i++;
   }
-  
-  if(texto[i]=='7')
-  {
-    cout<<'Z';
-    cout<<'H';
+  if(texto[i]=='7'){
     novotexto[i]='Z';
     novotexto[i+1]='H';
     i++;
   }
-  
-  if(texto[i]=='8')
-  {
-    cout<<'Z';
-    cout<<'I';
+  if(texto[i]=='8'){
     novotexto[i]='Z';
     novotexto[i+1]='I';
     i++;
   }
-  
-  if(texto[i]=='9')
-  {
-    cout<<'Z';
-    cout<<'J';
+  if(texto[i]=='9'){
     novotexto[i]='Z';
     novotexto[i+1]='J';
     i++;
   }
-    
+  if(texto[i]=='A'){
+    novotexto[i]='A';
+  }
+    if(texto[i]=='B'){
+    novotexto[i]='B';
+  }
+  if(texto[i]=='C'){
+    novotexto[i]='C';
+  }
+  if(texto[i]=='D'){
+    novotexto[i]='D';
+  } 
+  if(texto[i]=='E'){
+    novotexto[i]='E';
+  } 
+  if(texto[i]=='F'){
+    novotexto[i]='F';
+  } 
+  if(texto[i]=='F'){
+    novotexto[i]='F';
+  } 
+  if(texto[i]=='G'){
+    novotexto[i]='G';
+  } 
+  if(texto[i]=='H'){
+    novotexto[i]='H';
+  } 
+  if(texto[i]=='I'){
+    novotexto[i]='I';
+  } 
+  if(texto[i]=='J'){
+    novotexto[i]='J';
+  } 
+  if(texto[i]=='K'){
+    novotexto[i]='K';
+  } 
+  if(texto[i]=='L'){
+    novotexto[i]='L';
+  } 
+  if(texto[i]=='M'){
+    novotexto[i]='M';
+  } 
+  if(texto[i]=='N'){
+    novotexto[i]='N';
+  } 
+  if(texto[i]=='O'){
+    novotexto[i]='O';
+  } 
+  if(texto[i]=='P'){
+    novotexto[i]='P';
+  } 
+  if(texto[i]=='Q'){
+    novotexto[i]='Q';
+  } 
+  if(texto[i]=='R'){
+    novotexto[i]='R';
+  } 
+  if(texto[i]=='S'){
+    novotexto[i]='S';
+  } 
+  if(texto[i]=='T'){
+    novotexto[i]='T';
+  } 
+  if(texto[i]=='U'){
+    novotexto[i]='U';
+  } 
+  if(texto[i]=='V'){
+    novotexto[i]='V';
+  } 
+  if(texto[i]=='W'){
+    novotexto[i]='W';
+  } 
+  if(texto[i]=='X'){
+    novotexto[i]='X';
+  } 
+  if(texto[i]=='Y'){
+    novotexto[i]='Y';
+  } 
+  if(texto[i]=='Z'){
+    novotexto[i]='Z';
+  } 
   }
   if(texto[i]=='Z'){
     cout<<'Z';
@@ -118,11 +165,20 @@ int main() {
     novotexto[i+1]='Z';
     i++;
   }
-
-
-
-
-
+}
+int novotamanho= strlen(novotexto);
+int vezes=1;
+for(i=0;i<novotamanho;i++){
+if(novotexto[i]==novotexto[i+1]){
+  vezes++;
+  if(novotexto[i]!=novotexto[i+2]){
+    cout <<vezes;
+    cout<<novotexto[i];
+  }
+}if((novotexto[i]!=novotexto[i+1])&&(novotexto[i]!=novotexto[i-1])){
+  cout<<novotexto[i];
+}
 }
 
 
+}
